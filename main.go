@@ -2,12 +2,12 @@ package main
 
 import (
 	"fmt"
-	"labrab2/tasks" // Обрати внимание: здесь должно быть имя твоего модуля!
+	"labrab2/tasks" 
 	"os"
 )
 
 func main() {
-	// Проверка аргументов для Задания 2 (СУБД)
+	// Проверка аргументов для Задания 2 
 	if len(os.Args) > 4 && os.Args[1] == "--file" && os.Args[3] == "--query" {
 		tasks.RunTask2Console(os.Args[2], os.Args[4])
 		return
@@ -39,7 +39,7 @@ func main() {
 		case 1:
 			tasks.RunTask1()
 		case 2:
-			fmt.Println("Для задания 2 используйте запуск через консоль: go run main.go --file data.txt --query 'SETADD apple'")
+			fmt.Println("Для задания 2 используем запуск через консоль: go run main.go --file data.txt --query 'SETADD apple'")
 		case 3:
 			tasks.RunTask3()
 		case 4:
